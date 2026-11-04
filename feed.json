@@ -1,7 +1,7 @@
 {
   "name": "dsh-ecosystem-feed",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-11-04T08:58:00+08:00",
+  "updated_at": "2026-11-04T21:21:53+08:00",
   "latest_day": "2026-11-04",
   "days": [
     "2026-10-25",
@@ -16,7 +16,7 @@
       "2026-10-25",
       "2026-11-04"
     ],
-    "item_count": 80
+    "item_count": 84
   },
   "mvp": {
     "public_pull": true,
@@ -26,6 +26,57 @@
     ]
   },
   "items": [
+    {
+      "id": "2117967253547221335",
+      "date": "2026-11-04",
+      "url": "https://x.com/ComposerPlusDSH/status/2117967253547221335",
+      "title": "dsh-composer-plus（MIT）：回退轮次、任务看板、输入历史、切 plan",
+      "why": "跟做补编辑器级体验缺口；可当精选「编辑体验」类插件",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "ComposerPlusDSH"
+    },
+    {
+      "id": "2117956958963843101",
+      "date": "2026-11-04",
+      "url": "https://x.com/River_Yang_/status/2117956958963843101",
+      "title": "Cordis 解读 Day 6：配置就是插件树",
+      "why": "社区自发开发者教育，可当插件架构素材；官方可扶持教育型创作者",
+      "tags": [
+        "practice",
+        "infra",
+        "creator"
+      ],
+      "source_handle": "River_Yang_"
+    },
+    {
+      "id": "2117952744824930734",
+      "date": "2026-11-04",
+      "url": "https://x.com/OrderG_X/status/2117952744824930734",
+      "title": "dsh-mobile：扫码手机接管长任务并推送；设计工作台支持微信小程序",
+      "why": "手机远程是反复需求，现有第三方解法可跟做与面试引用",
+      "tags": [
+        "practice",
+        "plugin",
+        "pain"
+      ],
+      "source_handle": "OrderG_X"
+    },
+    {
+      "id": "2117936470917042581",
+      "date": "2026-11-04",
+      "url": "https://x.com/OpenDesignHQ/status/2117936470917042581",
+      "title": "OpenDesign 开源 Creator Mode 玩法：prompt 生成插件 / GitHub 导入 / 本地上传",
+      "why": "竞品复刻创造模式，护城河要落到插件 UX；中文二传见 @tuturetom",
+      "tags": [
+        "creator-mode",
+        "infra",
+        "narrative"
+      ],
+      "source_handle": "OpenDesignHQ"
+    },
     {
       "id": "2117781931144130756",
       "date": "2026-11-04",
