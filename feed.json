@@ -1,0 +1,1007 @@
+{
+  "name": "dsh-ecosystem-feed",
+  "timezone": "Asia/Shanghai",
+  "updated_at": "2026-11-04T08:58:00+08:00",
+  "latest_day": "2026-11-04",
+  "days": [
+    "2026-10-25",
+    "2026-11-01",
+    "2026-11-02",
+    "2026-11-03",
+    "2026-11-04"
+  ],
+  "coverage": {
+    "note": "MVP backfill from Creator Mode packs + monitor; not full X history; ongoing via evening routine.",
+    "range": [
+      "2026-10-25",
+      "2026-11-04"
+    ],
+    "item_count": 80
+  },
+  "mvp": {
+    "public_pull": true,
+    "usage_examples": [
+      "examples/x-wechat-digest.md",
+      "examples/dsh-plugin-stub.md"
+    ]
+  },
+  "items": [
+    {
+      "id": "2117781931144130756",
+      "date": "2026-11-04",
+      "url": "https://x.com/zhengtang364848/status/2117781931144130756",
+      "title": "同一套 7 道官方题，GLM / MiniMax / DeepSeek 在创造模式逐格验收：35 格只 13 格全过",
+      "why": "少见的按真产出物验收的多模型对比；结论是 agent 看不见自己做的页面，跟做前先自己点一遍",
+      "tags": [
+        "practice",
+        "creator-mode",
+        "eval"
+      ],
+      "source_handle": "zhengtang364848"
+    },
+    {
+      "id": "2117771706555375960",
+      "date": "2026-11-04",
+      "url": "https://x.com/woyaoyigefanqie/status/2117771706555375960",
+      "title": "装插件重启常因兼容性报错，要回退才能诊断；希望有自我修复模式（回复崔天毅）",
+      "why": "装多个插件前先知道的坑：出错时先回退最近装的插件再重启",
+      "tags": [
+        "pain",
+        "plugin"
+      ],
+      "source_handle": "woyaoyigefanqie"
+    },
+    {
+      "id": "2117766917544894601",
+      "date": "2026-11-04",
+      "url": "https://x.com/JayQinQT/status/2117766917544894601",
+      "title": "ClawPanel 统一管理多 harness（含 DSH）",
+      "why": "多 harness 并存，选型与迁移有对照",
+      "tags": [
+        "infra",
+        "narrative"
+      ],
+      "source_handle": "JayQinQT"
+    },
+    {
+      "id": "2117766682387337488",
+      "date": "2026-11-04",
+      "url": "https://x.com/Choleradutie/status/2117766682387337488",
+      "title": "官方帖下要 flatpak",
+      "why": "Linux 分发诉求持续，做插件/安装引导可对准",
+      "tags": [
+        "pain",
+        "creator-mode"
+      ],
+      "source_handle": "Choleradutie"
+    },
+    {
+      "id": "2117760972525867341",
+      "date": "2026-11-04",
+      "url": "https://x.com/loktar00/status/2117760972525867341",
+      "title": "DSH 跑 Qwen 3.8 27B 对比 xhigh/medium",
+      "why": "本地模型圈把 DSH 当评测底座，可抄评测搭法",
+      "tags": [
+        "practice",
+        "infra"
+      ],
+      "source_handle": "loktar00"
+    },
+    {
+      "id": "2117757973313486896",
+      "date": "2026-11-04",
+      "url": "https://x.com/xiaoyunHK/status/2117757973313486896",
+      "title": "转介卡兹克 DSH「养鱼」教程（多端）",
+      "why": "头部中文创作者教学，适合当多端接入的跟做入口",
+      "tags": [
+        "creator",
+        "practice"
+      ],
+      "source_handle": "xiaoyunHK"
+    },
+    {
+      "id": "2117755381099401643",
+      "date": "2026-11-04",
+      "url": "https://x.com/JMkernt/status/2117755381099401643",
+      "title": "想先试七个 demo 的中文版",
+      "why": "中文模板需求明确，内容/Creator 可跟",
+      "tags": [
+        "pain",
+        "creator-mode"
+      ],
+      "source_handle": "JMkernt"
+    },
+    {
+      "id": "2117754336331837901",
+      "date": "2026-11-04",
+      "url": "https://x.com/CryptoSarom/status/2117754336331837901",
+      "title": "创造模式做小游戏关卡，约¥3，插件打包报错",
+      "why": "有真实成本与可复现路径；打包 bug 是跟做前要避开的坑",
+      "tags": [
+        "creator-mode",
+        "practice",
+        "pain"
+      ],
+      "source_handle": "CryptoSarom"
+    },
+    {
+      "id": "2117754255931256858",
+      "date": "2026-11-04",
+      "url": "https://x.com/lessismore1900/status/2117754255931256858",
+      "title": "DSH 自托管团队控制面",
+      "why": "团队与企业分发的参考实现方向",
+      "tags": [
+        "infra"
+      ],
+      "source_handle": "lessismore1900"
+    },
+    {
+      "id": "2117749099797565541",
+      "date": "2026-11-04",
+      "url": "https://x.com/superMi11818336/status/2117749099797565541",
+      "title": "社区总结：preview / ≠Super-agent / 宿主高信任",
+      "why": "对外讲产品时可用的共识表述",
+      "tags": [
+        "narrative",
+        "creator-mode"
+      ],
+      "source_handle": "superMi11818336"
+    },
+    {
+      "id": "2117687219658084585",
+      "date": "2026-11-04",
+      "url": "https://x.com/chungmuromafia/status/2117687219658084585",
+      "title": "一句话做出远程会话按钮（Remote Harness）",
+      "why": "想远程控制 DSH 的人可参考",
+      "tags": [
+        "practice",
+        "overseas",
+        "creator-mode"
+      ],
+      "source_handle": "chungmuromafia"
+    },
+    {
+      "id": "2117681968079057234",
+      "date": "2026-11-04",
+      "url": "https://x.com/shawnchauhan1/status/2117681968079057234",
+      "title": "别家把写插件当编码任务，Creator Mode 把它变成描述任务；瓶颈会是信任",
+      "why": "一句话看清下一阶段的关键：不是能不能生成，而是敢不敢装",
+      "tags": [
+        "narrative",
+        "overseas"
+      ],
+      "source_handle": "shawnchauhan1"
+    },
+    {
+      "id": "2117660179671953635",
+      "date": "2026-11-04",
+      "url": "https://x.com/OxMumu3/status/2117660179671953635",
+      "title": "用 DSH 做家人的「微信大管家」：爸妈照常用微信办事",
+      "why": "把自己搭好的 Agent 通过微信共享给家人的思路，适合想给长辈用的人",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "OxMumu3"
+    },
+    {
+      "id": "2117614908691107895",
+      "date": "2026-11-03",
+      "url": "https://x.com/vista8/status/2117614908691107895",
+      "title": "两个 DSH 插件微信群 10 分钟各满 200 人",
+      "why": "中文社群热度信号；想交流插件可以找这类群",
+      "tags": [
+        "creator",
+        "finder"
+      ],
+      "source_handle": "vista8"
+    },
+    {
+      "id": "2117607405391626270",
+      "date": "2026-11-03",
+      "url": "https://x.com/wxinshn04432263/status/2117607405391626270",
+      "title": "产品经理自制 Mermaid 流程图显示插件",
+      "why": "非程序员用 Creator Mode 造工具的例子",
+      "tags": [
+        "practice",
+        "creator-mode"
+      ],
+      "source_handle": "wxinshn04432263"
+    },
+    {
+      "id": "2117598034435674146",
+      "date": "2026-11-03",
+      "url": "https://x.com/robinham/status/2117598034435674146",
+      "title": "还原官方视频里的便签墙插件：九种纸色，agent 可直接读写",
+      "why": "说一句「记到便签墙」就真贴上去：agent 与插件双向读写的好样板",
+      "tags": [
+        "practice",
+        "creator-mode"
+      ],
+      "source_handle": "robinham"
+    },
+    {
+      "id": "2117597382548316526",
+      "date": "2026-11-03",
+      "url": "https://x.com/MichaelGannotti/status/2117597382548316526",
+      "title": "让 Hermes agent 读 superagent 代码而非直接安装：「设计参考，不是可用依赖」",
+      "why": "评估新开源原型的稳妥做法：先让 agent 审代码再决定装不装",
+      "tags": [
+        "narrative",
+        "pain",
+        "overseas"
+      ],
+      "source_handle": "MichaelGannotti"
+    },
+    {
+      "id": "2117542517365506172",
+      "date": "2026-11-03",
+      "url": "https://x.com/dahongfei/status/2117542517365506172",
+      "title": "中美 LLM 路线分化：Creator Mode 把用户放在中心",
+      "why": "从行业格局理解 Creator Mode 的位置",
+      "tags": [
+        "narrative",
+        "overseas"
+      ],
+      "source_handle": "dahongfei"
+    },
+    {
+      "id": "2117536144674234733",
+      "date": "2026-11-03",
+      "url": "https://x.com/antiAIvo/status/2117536144674234733",
+      "title": "手写最小版 Cordis 插件框架，拆解「一切皆插件」",
+      "why": "想懂 DSH 插件机制底层的人，跟着 200 行最小版学最快",
+      "tags": [
+        "infra",
+        "practice"
+      ],
+      "source_handle": "antiAIvo"
+    },
+    {
+      "id": "2117524941285560416",
+      "date": "2026-11-03",
+      "url": "https://x.com/bebuu_ai/status/2117524941285560416",
+      "title": "DSH 17 分钟给自己写出 Claude Code 账号 OAuth 插件并热加载（V4.1 Flash，202 tok/s）",
+      "why": "「harness 改自己」最具体的案例；395 粉也做到 1.2 万曝光，说明具体数字有说服力",
+      "tags": [
+        "practice",
+        "overseas",
+        "creator-mode"
+      ],
+      "source_handle": "bebuu_ai"
+    },
+    {
+      "id": "2117506894571159648",
+      "date": "2026-11-03",
+      "url": "https://x.com/DeepSeekHarness/status/2117506894571159648",
+      "title": "官方安装入口：deepseek.com/harness",
+      "why": "想装的人直接从官方入口下载，避免第三方包",
+      "tags": [
+        "official"
+      ],
+      "source_handle": "DeepSeekHarness"
+    },
+    {
+      "id": "2117497668884947308",
+      "date": "2026-11-03",
+      "url": "https://x.com/MilanGlow/status/2117497668884947308",
+      "title": "英文 Creator Mode 上手教程",
+      "why": "英文用户的入门帖",
+      "tags": [
+        "practice",
+        "overseas",
+        "creator-mode"
+      ],
+      "source_handle": "MilanGlow"
+    },
+    {
+      "id": "2117461011083247784",
+      "date": "2026-11-03",
+      "url": "https://x.com/superalesha/status/2117461011083247784",
+      "title": "离开 OMP 转投 DSH：4×3090 上的开源模型全在这跑",
+      "why": "本地 / 开源模型玩家的迁移样本：DSH 能当多模型统一入口",
+      "tags": [
+        "infra",
+        "overseas"
+      ],
+      "source_handle": "superalesha"
+    },
+    {
+      "id": "2117460027921645973",
+      "date": "2026-11-03",
+      "url": "https://x.com/vista8/status/2117460027921645973",
+      "title": "向阳乔木做了插件官网，含 DSH 插件下载安装",
+      "why": "社区自发的插件下载站，是官方市场出来前的找插件渠道之一",
+      "tags": [
+        "finder",
+        "creator"
+      ],
+      "source_handle": "vista8"
+    },
+    {
+      "id": "2117458594161688688",
+      "date": "2026-11-03",
+      "url": "https://x.com/donnior/status/2117458594161688688",
+      "title": "用 Creator Mode 仿 VS Code 主题换肤，一次成功",
+      "why": "换皮肤是最适合新手的第一个 Creator 练习",
+      "tags": [
+        "practice",
+        "creator-mode"
+      ],
+      "source_handle": "donnior"
+    },
+    {
+      "id": "2117452262117437523",
+      "date": "2026-11-03",
+      "url": "https://x.com/monigold888/status/2117452262117437523",
+      "title": "「养鱼」教程：大肥鱼接 QQ、微信、飞书和 B 站",
+      "why": "想让 DSH 进到常用聊天工具里的跟做入口",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "monigold888"
+    },
+    {
+      "id": "2117451720837968126",
+      "date": "2026-11-03",
+      "url": "https://x.com/SicanianSun/status/2117451720837968126",
+      "title": "澄清：Super-agent 文章是架构设想，不是已上线功能",
+      "why": "避免误传；跟别人介绍 DSH 时分清已有功能和方向",
+      "tags": [
+        "narrative"
+      ],
+      "source_handle": "SicanianSun"
+    },
+    {
+      "id": "2117449875327766853",
+      "date": "2026-11-03",
+      "url": "https://x.com/ai_fengshou/status/2117449875327766853",
+      "title": "建议先别把 DSH 装在主力机上",
+      "why": "高权限模式的现实提醒：先在副机或隔离环境试",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "ai_fengshou"
+    },
+    {
+      "id": "2117449712575942863",
+      "date": "2026-11-03",
+      "url": "https://x.com/OxMumu3/status/2117449712575942863",
+      "title": "《DeepSeek Harness 首战告捷？要走向极客玩具还是大众普惠？》（7 个插件、扒 7000 个项目后的体感）",
+      "why": "从创作者视角看生态现状：插件是解决方案的结构化载体，破局在于让懂场景的人也能造插件",
+      "tags": [
+        "narrative",
+        "finder",
+        "creator"
+      ],
+      "source_handle": "OxMumu3"
+    },
+    {
+      "id": "2117442507306901741",
+      "date": "2026-11-03",
+      "url": "https://x.com/dotey/status/2117442507306901741",
+      "title": "baoyu-design 新增 Motion 功能",
+      "why": "设计类插件在持续更新，做图、动效的人可以跟",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "dotey"
+    },
+    {
+      "id": "2117441389206413390",
+      "date": "2026-11-03",
+      "url": "https://x.com/tianyi/status/2117441389206413390",
+      "title": "崔天毅给林亦的插件案例「手动点赞」",
+      "why": "官方在放大真实用出来的结果：做真界面案例比空谈更容易被看见",
+      "tags": [
+        "official",
+        "creator"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2117436999250649439",
+      "date": "2026-11-03",
+      "url": "https://x.com/op7418/status/2117436999250649439",
+      "title": "歸藏 dsh-guizang-design 宣传片：设计 Skill + 作品库，一键做同款",
+      "why": "「插件 = 一整套解决方案」的标杆：设计工作流打包成插件",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "op7418"
+    },
+    {
+      "id": "2117376769862869490",
+      "date": "2026-11-03",
+      "url": "https://x.com/_eXsoR_/status/2117376769862869490",
+      "title": "Linux 绕行：npx / npm 装 Web 版，再配 systemd 用户服务",
+      "why": "没有 Linux 桌面版时的可用方案",
+      "tags": [
+        "infra",
+        "pain",
+        "overseas"
+      ],
+      "source_handle": "_eXsoR_"
+    },
+    {
+      "id": "2117373864170635514",
+      "date": "2026-11-03",
+      "url": "https://x.com/daniel_mac8/status/2117373864170635514",
+      "title": "dsh-superagent-prototype：「尽量少占你的注意力」的设计",
+      "why": "看懂 superagent 原型的设计取向：减少人盯 agent 的时间",
+      "tags": [
+        "narrative",
+        "overseas",
+        "infra"
+      ],
+      "source_handle": "daniel_mac8"
+    },
+    {
+      "id": "2117371874292502788",
+      "date": "2026-11-03",
+      "url": "https://x.com/Sigma_ccc/status/2117371874292502788",
+      "title": "DSH 官方在 B 站发了第一条视频（主题：创造模式）",
+      "why": "国内用户可以直接在 B 站看官方演示，官方开始做中文内容渠道",
+      "tags": [
+        "official",
+        "creator-mode"
+      ],
+      "source_handle": "Sigma_ccc"
+    },
+    {
+      "id": "2117368097044648072",
+      "date": "2026-11-03",
+      "url": "https://x.com/IBuzovskyi/status/2117368097044648072",
+      "title": "把 Super-agent 六个模块逐一对到 Hermes（收藏比赞多）",
+      "why": "想比较 DSH 和 Hermes 架构的人，这是最完整的一张对照表",
+      "tags": [
+        "narrative",
+        "overseas",
+        "infra"
+      ],
+      "source_handle": "IBuzovskyi"
+    },
+    {
+      "id": "2117367564787405260",
+      "date": "2026-11-03",
+      "url": "https://x.com/onenewbite/status/2117367564787405260",
+      "title": "harness 就是用户与 AI 的界面，插件是用户为自己造的 AI 原生软件",
+      "why": "理解「为什么要自己造插件」的一句话框架",
+      "tags": [
+        "narrative",
+        "overseas"
+      ],
+      "source_handle": "onenewbite"
+    },
+    {
+      "id": "2117364784526225866",
+      "date": "2026-11-03",
+      "url": "https://x.com/ship_29/status/2117364784526225866",
+      "title": "15 美分做出带文档、注释、测试的单文件工具",
+      "why": "小工具的成本参照：一次生成花费可以很低",
+      "tags": [
+        "practice",
+        "overseas"
+      ],
+      "source_handle": "ship_29"
+    },
+    {
+      "id": "2117364106592448533",
+      "date": "2026-11-03",
+      "url": "https://x.com/cynricantao/status/2117364106592448533",
+      "title": "太习惯 Hermes，试 DSH 不顺手，迁移有成本",
+      "why": "从其他 harness 迁过来先预留适应期，别一天下结论",
+      "tags": [
+        "pain",
+        "overseas"
+      ],
+      "source_handle": "cynricantao"
+    },
+    {
+      "id": "2117363499911524522",
+      "date": "2026-11-03",
+      "url": "https://x.com/CatMaster20000/status/2117363499911524522",
+      "title": "See Now 屏幕监看插件：画面静止几乎不耗资源",
+      "why": "想做「盯屏」类自动化可以参考它的变化检测做法",
+      "tags": [
+        "practice",
+        "overseas"
+      ],
+      "source_handle": "CatMaster20000"
+    },
+    {
+      "id": "2117359804729716928",
+      "date": "2026-11-03",
+      "url": "https://x.com/p3rformative/status/2117359804729716928",
+      "title": "Creator 插件跑在沙箱外：建议先用测试 profile 试",
+      "why": "低成本的安全习惯：新插件先在测试环境跑",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "p3rformative"
+    },
+    {
+      "id": "2117355416330059932",
+      "date": "2026-11-03",
+      "url": "https://x.com/filicroval/status/2117355416330059932",
+      "title": "「鞭子」梗图插件（约 15 万粉大号用 Creator Mode 做）",
+      "why": "整活插件的传播样本：好玩比好用更容易让人第一次装",
+      "tags": [
+        "practice",
+        "overseas",
+        "creator"
+      ],
+      "source_handle": "filicroval"
+    },
+    {
+      "id": "2117346829507649558",
+      "date": "2026-11-03",
+      "url": "https://x.com/SlavaOPs/status/2117346829507649558",
+      "title": "插件 = 指令 + 工具 + 权限：装插件就是一次信任决定",
+      "why": "装别人分享的插件前该问的三件事：谁签名、安装时显示什么、能拿到哪些权限",
+      "tags": [
+        "pain",
+        "narrative"
+      ],
+      "source_handle": "SlavaOPs"
+    },
+    {
+      "id": "2117344869698159029",
+      "date": "2026-11-03",
+      "url": "https://x.com/NextNote_App/status/2117344869698159029",
+      "title": "Web 面板实操：在创造模式里用 cordis_inspect_list / query 查接口",
+      "why": "写插件前先查有哪些可用接口，少让 agent 瞎猜",
+      "tags": [
+        "practice",
+        "creator-mode"
+      ],
+      "source_handle": "NextNote_App"
+    },
+    {
+      "id": "2117344609957470401",
+      "date": "2026-11-03",
+      "url": "https://x.com/tingsongday/status/2117344609957470401",
+      "title": "上手建议：拿你正在付费解决的真实任务来测，别只玩 demo",
+      "why": "评估 DSH 值不值得用的最实在方法",
+      "tags": [
+        "practice",
+        "overseas"
+      ],
+      "source_handle": "tingsongday"
+    },
+    {
+      "id": "2117340187806388487",
+      "date": "2026-11-03",
+      "url": "https://x.com/amv_rad/status/2117340187806388487",
+      "title": "想要每月 $5–10 订阅，不想按 API 用量付费",
+      "why": "计费方式影响普通用户上手；关注官方是否推出订阅套餐",
+      "tags": [
+        "pain",
+        "overseas"
+      ],
+      "source_handle": "amv_rad"
+    },
+    {
+      "id": "2117336565462544564",
+      "date": "2026-11-03",
+      "url": "https://x.com/janbodnar/status/2117336565462544564",
+      "title": "没有 Linux 桌面版",
+      "why": "Linux 用户的头号门槛；可先看 Web 版 + systemd 的绕行办法",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "janbodnar"
+    },
+    {
+      "id": "2117334930325979383",
+      "date": "2026-11-03",
+      "url": "https://x.com/Chris_Wozniczek/status/2117334930325979383",
+      "title": "DSH 里跑 DeepSeek，缓存命中率超 99%",
+      "why": "用 DeepSeek 模型的人在 DSH 里能拿到很高缓存命中，成本更可控（用户实测口径）",
+      "tags": [
+        "infra",
+        "overseas"
+      ],
+      "source_handle": "Chris_Wozniczek"
+    },
+    {
+      "id": "2117327428653875293",
+      "date": "2026-11-03",
+      "url": "https://x.com/kazumi_aura/status/2117327428653875293",
+      "title": "dsh-bili-scroll：吉祥物「大肥鱼」挂机刷 B 站和抖音",
+      "why": "国内出圈的整活插件，看社区怎么用「好玩」带新用户",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "kazumi_aura"
+    },
+    {
+      "id": "2117322474404859999",
+      "date": "2026-11-03",
+      "url": "https://x.com/Sidrisi786/status/2117322474404859999",
+      "title": "superagent 原型默认 danger-full-access，worker 可读 home 目录",
+      "why": "跑原型前先看权限，别在有敏感数据的账户下直接起",
+      "tags": [
+        "pain",
+        "infra"
+      ],
+      "source_handle": "Sidrisi786"
+    },
+    {
+      "id": "2117315183085228419",
+      "date": "2026-11-03",
+      "url": "https://x.com/themandalorenzo/status/2117315183085228419",
+      "title": "把现成 AI wiki 生成器一次会话包成 DSH 侧边栏插件（原引擎一行没改）",
+      "why": "已有脚本或工具的人可以这样「包一层」进 DSH，不用重写",
+      "tags": [
+        "practice",
+        "creator-mode",
+        "overseas"
+      ],
+      "source_handle": "themandalorenzo"
+    },
+    {
+      "id": "2117312169981423746",
+      "date": "2026-11-03",
+      "url": "https://x.com/OxMumu3/status/2117312169981423746",
+      "title": "用 DSH 做个人 Agent「DSH Dot」：微信主动找我，接 flomo / 滴答 / Gmail / 日历",
+      "why": "把散落各处的笔记、待办和邮件接进一个助理的实战拆法，可抄接入思路",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "OxMumu3"
+    },
+    {
+      "id": "2117310976462827663",
+      "date": "2026-11-03",
+      "url": "https://x.com/Techmeme/status/2117310976462827663",
+      "title": "Techmeme 转 Bloomberg 报道 Creator Mode",
+      "why": "主流科技媒体已经报道，想给不混 X 的人看时可以用这条",
+      "tags": [
+        "overseas",
+        "narrative"
+      ],
+      "source_handle": "Techmeme"
+    },
+    {
+      "id": "2117309855807455429",
+      "date": "2026-11-03",
+      "url": "https://x.com/OxMumu3/status/2117309855807455429",
+      "title": "回复崔天毅：创作前先找现成插件、试配置、看能否组合",
+      "why": "避免重复造轮子的使用顺序：先找、再配、再组合，最后才创造",
+      "tags": [
+        "finder",
+        "pain",
+        "creator"
+      ],
+      "source_handle": "OxMumu3"
+    },
+    {
+      "id": "2117301729024938025",
+      "date": "2026-11-03",
+      "url": "https://x.com/NFT_Chen/status/2117301729024938025",
+      "title": "NFT_Chen 实测创造模式：官方 prompt 跑通 3 个插件，附完整流程与权限弹窗",
+      "why": "中文最清楚的跟做步骤：复制 prompt → 选创造模式 → 发送 → 安装前「允许一次」",
+      "tags": [
+        "practice",
+        "creator-mode",
+        "creator"
+      ],
+      "source_handle": "NFT_Chen"
+    },
+    {
+      "id": "2117293578032677195",
+      "date": "2026-11-03",
+      "url": "https://x.com/ItsmeAjayKV/status/2117293578032677195",
+      "title": "Harness tier list：DSH 排 S++（6 倍出圈的排名图）",
+      "why": "看清社区怎么给各 harness 排位；可站队的排名图比流程图更好传",
+      "tags": [
+        "overseas",
+        "narrative"
+      ],
+      "source_handle": "ItsmeAjayKV"
+    },
+    {
+      "id": "2117292783006347416",
+      "date": "2026-11-03",
+      "url": "https://x.com/_BDRz/status/2117292783006347416",
+      "title": "阿语圈最大 QT：别家让你在 App 里设计，DeepSeek 让你设计 App 本身",
+      "why": "27 万曝光的定位句，说明 Creator Mode 的叙事在中英以外也传开了",
+      "tags": [
+        "overseas",
+        "narrative"
+      ],
+      "source_handle": "_BDRz"
+    },
+    {
+      "id": "2117290868465963365",
+      "date": "2026-11-03",
+      "url": "https://x.com/JOhN07x2/status/2117290868465963365",
+      "title": "一句 prompt 做番茄钟，约 5 分 24 秒，agent 自己装、自己验",
+      "why": "给新手的耗时基准：简单插件大约就这个量级",
+      "tags": [
+        "practice",
+        "creator-mode",
+        "overseas"
+      ],
+      "source_handle": "JOhN07x2"
+    },
+    {
+      "id": "2117289282042052830",
+      "date": "2026-11-03",
+      "url": "https://x.com/WalkureAlice/status/2117289282042052830",
+      "title": "Flash 写不好大型长任务插件，希望更强的 Pro",
+      "why": "复杂插件别只靠 Flash 一把出，拆小步或换更强模型再试",
+      "tags": [
+        "pain",
+        "creator-mode"
+      ],
+      "source_handle": "WalkureAlice"
+    },
+    {
+      "id": "2117284327327166890",
+      "date": "2026-11-02",
+      "url": "https://x.com/AmoebaFarm/status/2117284327327166890",
+      "title": "AmoebaFarm：Creator Mode 录屏 + 拆解 thread（1.2k 粉做到 1 万曝光）",
+      "why": "英文圈讲清 Creator Mode 的好范本；想发自己的 demo，可以学「录屏 + 一句结论」",
+      "tags": [
+        "overseas",
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "AmoebaFarm"
+    },
+    {
+      "id": "2117282990430851383",
+      "date": "2026-11-02",
+      "url": "https://x.com/linyiLYi/status/2117282990430851383",
+      "title": "林亦补充：DSH 插件之间数据互通，插件越多联动越强",
+      "why": "选插件时考虑能否和已有插件共享数据，组合比单个更值钱",
+      "tags": [
+        "practice",
+        "narrative"
+      ],
+      "source_handle": "linyiLYi"
+    },
+    {
+      "id": "2117281899983044852",
+      "date": "2026-11-02",
+      "url": "https://x.com/wcnnngb6/status/2117281899983044852",
+      "title": "呼吁官方插件库，收录优秀插件",
+      "why": "找插件难是普遍诉求；在官方库出来前，社区目录和发现类插件是过渡方案",
+      "tags": [
+        "pain",
+        "finder"
+      ],
+      "source_handle": "wcnnngb6"
+    },
+    {
+      "id": "2117279676737671322",
+      "date": "2026-11-02",
+      "url": "https://x.com/linyiLYi/status/2117279676737671322",
+      "title": "林亦「大数理论」：用 DSH 插件记录手环与消费数据，AI 反过来给生活建议",
+      "why": "目前最强的真实使用案例（崔天毅点赞），想做个人数据插件可以照这个思路",
+      "tags": [
+        "practice",
+        "creator",
+        "creator-mode"
+      ],
+      "source_handle": "linyiLYi"
+    },
+    {
+      "id": "2117277198856204409",
+      "date": "2026-11-02",
+      "url": "https://x.com/pi_lao85271/status/2117277198856204409",
+      "title": "希望插件能一键上传官方市场，GitHub 不是长久之计",
+      "why": "分发是创作者的共同痛点；做插件的人可以提前想好发布与更新渠道",
+      "tags": [
+        "pain",
+        "finder"
+      ],
+      "source_handle": "pi_lao85271"
+    },
+    {
+      "id": "2117274899760943421",
+      "date": "2026-11-02",
+      "url": "https://x.com/vishalsingh2972/status/2117274899760943421",
+      "title": "英文圈最大 QT：「DeepSeek Harness can literally modify itself now」",
+      "why": "向英文朋友解释 DSH 最快的一句话；17 万曝光说明这个定位最好传",
+      "tags": [
+        "overseas",
+        "narrative",
+        "creator-mode"
+      ],
+      "source_handle": "vishalsingh2972"
+    },
+    {
+      "id": "2117269882773651487",
+      "date": "2026-11-02",
+      "url": "https://x.com/mspd4100/status/2117269882773651487",
+      "title": "插件和版本绑定太强、接口迭代太快",
+      "why": "DSH 一更新插件可能要重来：写插件时尽量少依赖内部接口，并关注版本说明",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "mspd4100"
+    },
+    {
+      "id": "2117269015139885525",
+      "date": "2026-11-02",
+      "url": "https://x.com/klarkxy/status/2117269015139885525",
+      "title": "Creator 模式没法给 DSH 自身 debug，前端 UI 难调",
+      "why": "做 UI 类插件前先有心理准备，留足手动调试时间",
+      "tags": [
+        "pain",
+        "creator-mode"
+      ],
+      "source_handle": "klarkxy"
+    },
+    {
+      "id": "2117263444735050158",
+      "date": "2026-11-02",
+      "url": "https://x.com/xiangxiang103/status/2117263444735050158",
+      "title": "「把软件的遥控器塞到用户手里」：逐帧拆解官方 1 分 39 秒视频",
+      "why": "没空看视频也能知道每个 demo 做了什么，且点明部分插件是多轮对话磨出来的，别指望一句就完美",
+      "tags": [
+        "creator-mode",
+        "narrative"
+      ],
+      "source_handle": "xiangxiang103"
+    },
+    {
+      "id": "2117258349649780737",
+      "date": "2026-11-02",
+      "url": "https://x.com/tianyi/status/2117258349649780737",
+      "title": "崔天毅亲自征集 Creator Mode 反馈（约 100 条回复）",
+      "why": "回复区是一手需求池：想提需求、看别人卡在哪、找共鸣，都去这里",
+      "tags": [
+        "official",
+        "creator-mode",
+        "pain"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2117256255907754016",
+      "date": "2026-11-02",
+      "url": "https://x.com/DeepSeekHarness/status/2117256255907754016",
+      "title": "官方公开 Creator Mode 演示插件的中英文 prompt 合集",
+      "why": "最低成本上手：照抄官方 prompt 就能复现视频里的插件，再在上面改",
+      "tags": [
+        "official",
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "DeepSeekHarness"
+    },
+    {
+      "id": "2117256196227019194",
+      "date": "2026-11-02",
+      "url": "https://x.com/DeepSeekHarness/status/2117256196227019194",
+      "title": "官方发布 Creator Mode：一句话把想法变成插件（Your Harness. You Define It.）",
+      "why": "这一轮所有讨论的起点；视频里的 demo 就是当前能力边界说明书。仍为 preview",
+      "tags": [
+        "official",
+        "creator-mode"
+      ],
+      "source_handle": "DeepSeekHarness"
+    },
+    {
+      "id": "2117177813652709633",
+      "date": "2026-11-02",
+      "url": "https://x.com/rohanpaul_ai/status/2117177813652709633",
+      "title": "HarnessMM 论文：DSH 在 98 个 HumanEval 任务上 token 降约 88%，成功率 71%→86%（论文口径）",
+      "why": "写-编-测这类可预测链路「一次规划 + 通过检查再执行」的省 token 思路，自己的工作流也能借",
+      "tags": [
+        "infra",
+        "overseas"
+      ],
+      "source_handle": "rohanpaul_ai"
+    },
+    {
+      "id": "2117064134961631414",
+      "date": "2026-11-02",
+      "url": "https://x.com/tianyi/status/2117064134961631414",
+      "title": "崔天毅：DeepSeek 会持续支持 pi 等主流 harness（跨 harness 路线）",
+      "why": "模型不绑死在 DSH 上，选工具不用押单一阵营；也说明官方走开放生态",
+      "tags": [
+        "official",
+        "narrative",
+        "infra"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2116997870213906524",
+      "date": "2026-11-02",
+      "url": "https://x.com/badlogicgames/status/2116997870213906524",
+      "title": "pi 作者 Mario Zechner 推荐 Super-agent 长文",
+      "why": "另一个 harness 的作者背书：DSH 团队在 harness 领域做的是新东西，英文开发者圈的认可信号",
+      "tags": [
+        "overseas",
+        "narrative"
+      ],
+      "source_handle": "badlogicgames"
+    },
+    {
+      "id": "2116955508729077940",
+      "date": "2026-11-02",
+      "url": "https://x.com/ai_funss/status/2116955508729077940",
+      "title": "8 个插件把 DSH 从「毛坯房」装成「精装修」（mnemon / image-gen / better-sidebar / dshfind…）",
+      "why": "近 900 收藏的装机清单，新装 DSH 可以直接照着挑",
+      "tags": [
+        "practice",
+        "finder"
+      ],
+      "source_handle": "ai_funss"
+    },
+    {
+      "id": "2116916636942790842",
+      "date": "2026-11-01",
+      "url": "https://x.com/MiaAI_lab/status/2116916636942790842",
+      "title": "DSH Open Access 插件：局域网 / Tailscale 免密钥打开 harness",
+      "why": "想在手机或其他设备上用 DSH 的现成方案；作者自己提醒端口别暴露公网，照做前先看",
+      "tags": [
+        "practice",
+        "infra",
+        "overseas"
+      ],
+      "source_handle": "MiaAI_lab"
+    },
+    {
+      "id": "2116867957330751793",
+      "date": "2026-11-01",
+      "url": "https://x.com/TanLuAI/status/2116867957330751793",
+      "title": "《DeepSeek Harness 保姆级教程：小白上手指南》（X Article）",
+      "why": "Creator Mode 之前最完整的中文入门：四种模式怎么选、先装哪些插件、和 WorkBuddy 同任务对比",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "TanLuAI"
+    },
+    {
+      "id": "2116859582639403080",
+      "date": "2026-11-01",
+      "url": "https://x.com/tianyi/status/2116859582639403080",
+      "title": "崔天毅转发 Super-agent 长文，并公开招产品经理与设计师",
+      "why": "负责人亲口说产品与设计是短板：想看团队下一步重点、或想参与共建的人值得关注",
+      "tags": [
+        "official",
+        "narrative"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2116857257245987236",
+      "date": "2026-11-01",
+      "url": "https://x.com/DeepSeekHarness/status/2116857257245987236",
+      "title": "官方长文《Exploring Super-agent Design》（架构设想，非已上线功能）",
+      "why": "想知道 DSH 往哪走（常驻、跨会话、多任务并行）就读这篇原始出处；后面所有 superagent 讨论都从这里来",
+      "tags": [
+        "official",
+        "narrative",
+        "infra"
+      ],
+      "source_handle": "DeepSeekHarness"
+    },
+    {
+      "id": "2114252446830575829",
+      "date": "2026-10-25",
+      "url": "https://x.com/OxMumu3/status/2114252446830575829",
+      "title": "「发现好插件 2.0」：先帮你从 6 千多条社区插件里找现成方案",
+      "why": "遇到问题先问有没有人做过、怎么组合，再决定要不要自己造，省 token 也少踩坑",
+      "tags": [
+        "finder",
+        "practice",
+        "creator"
+      ],
+      "source_handle": "OxMumu3"
+    }
+  ]
+}

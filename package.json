@@ -1,0 +1,10 @@
+{
+  "name": "@oxmumu3/dsh-ecosystem-feed",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Public curated DeepSeek Harness feed and a read-only source publisher",
+  "author": "牛村木木山",
+  "engines": { "node": ">=22.19.0" },
+  "scripts": { "test": "node --test test/*.test.mjs", "check": "node scripts/validate.mjs", "sync": "node scripts/sync.mjs" }
+}
