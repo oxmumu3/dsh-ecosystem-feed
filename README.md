@@ -16,7 +16,7 @@
 我以后可以直接说“只看 practice，每次 3 条”“改成每周”“用英文”等。我的偏好保存在我自己的 Agent 中，不改公共信源，也不因公共库更新而重置。
 ```
 
-更详细的无新增、失败与定时说明见 [SUBSCRIBE.md](SUBSCRIBE.md)。
+更详细的无新增、失败与定时说明见 [SUBSCRIBE.md](SUBSCRIBE.md)。实际首报、去重与偏好验证见 [VERIFICATION.md](VERIFICATION.md)。
 
 ## 这份源提供什么
 

@@ -4,15 +4,18 @@
 
 ```sh
 npm run sync -- --source /absolute/path/to/dsh-ecosystem-feed
-npm test
 npm run check
-git diff -- feed.json days schema.md
-git add -- feed.json days schema.md
-git commit -m "data: refresh ecosystem feed"
-git push origin main
 ```
 
-命令参数是维护者本机的源目录，只留本机，不提交个人绝对路径。同步先验证数据与源文件稳定性，再更新公开文件；相同内容重复同步不改写文件。一次 Git 提交作为同一份公开快照，不强推、不改历史。
+上面两行仅在本地查看同步结果。生产任务写库完成后，使用一个完整发布命令：
+
+```sh
+npm run publish -- --source /absolute/path/to/dsh-ecosystem-feed
+```
+
+需要本机 `git`、Node.js 22.19+ 和已经登录正式账号的 `gh`。脚本核对 `oxmumu3` 账号、正式公共仓库、干净的 `main` 与正常快进关系；同步、校验后仅提交 feed、schema 和日文件，正常推送，再匿名回读 commit 与 main 两个 feed 地址核对哈希。无内容变化时不新增提交。准入失败或推送失败不重置、不强推，保留实际状态供维护者处理。
+
+命令参数是维护者本机的源目录，只留本机，不提交个人绝对路径。直接使用完整发布命令时，起始工作树必须干净；如先运行了手动同步，则先检查并处理本地改动，再进入自动发布。同步先验证数据与源文件稳定性，再更新公开文件；相同内容重复同步不改写文件。一次 Git 提交作为同一份公开快照。
 
 发布后用不含认证的 HTTP 请求回读正式仓库与 raw URL，核对内容哈希、更新时间和条数。公开归属必须是 `oxmumu3/dsh-ecosystem-feed`；本地提交完成不等于公网已更新。
 
