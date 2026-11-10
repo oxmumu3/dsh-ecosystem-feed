@@ -1,22 +1,25 @@
 {
   "name": "dsh-ecosystem-feed",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-11-04T21:21:53+08:00",
-  "latest_day": "2026-11-04",
+  "updated_at": "2026-11-10T21:26:45+08:00",
+  "latest_day": "2026-11-10",
   "days": [
     "2026-10-25",
     "2026-11-01",
     "2026-11-02",
     "2026-11-03",
-    "2026-11-04"
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-10"
   ],
   "coverage": {
     "note": "MVP backfill from Creator Mode packs + monitor; not full X history; ongoing via evening routine.",
     "range": [
       "2026-10-25",
-      "2026-11-04"
+      "2026-11-10"
     ],
-    "item_count": 84
+    "item_count": 118
   },
   "mvp": {
     "public_pull": true,
@@ -26,6 +29,414 @@
     ]
   },
   "items": [
+    {
+      "id": "2120085945298846069",
+      "date": "2026-11-10",
+      "url": "https://x.com/Lniosytest/status/2120085945298846069",
+      "title": "转述：第一次用创造模式写插件后会话全丢（原帖未核）",
+      "why": "写新插件先在隔离目录跑，会话和配置备份到别处，删文件类操作不要全自动",
+      "tags": [
+        "pain",
+        "creator-mode"
+      ],
+      "source_handle": "Lniosytest"
+    },
+    {
+      "id": "2120085095008866808",
+      "date": "2026-11-10",
+      "url": "https://x.com/WattterDjiang/status/2120085095008866808",
+      "title": "WTT 创作工作台：需求、大纲、分镜、PPT 放进同一块无限画布",
+      "why": "做课件或内容交付的，可以把资料和版本放在一个工作区里追溯",
+      "tags": [
+        "plugin",
+        "creator"
+      ],
+      "source_handle": "WattterDjiang"
+    },
+    {
+      "id": "2120077004469104921",
+      "date": "2026-11-10",
+      "url": "https://x.com/FiniYang/status/2120077004469104921",
+      "title": "dsh-xcode 开源：把 Xcode 外部 Agent 接口接进 DSH",
+      "why": "做 iOS/macOS 的可直接装，读 Xcode 索引诊断、渲 SwiftUI 预览、跑增量构建；需 Xcode 26.3+",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "FiniYang"
+    },
+    {
+      "id": "2120072522389725206",
+      "date": "2026-11-10",
+      "url": "https://x.com/Keep_Liu/status/2120072522389725206",
+      "title": "不用的 MCP 吃掉首轮 98% tokens：关掉后从约 25 万回到约 2.5 万",
+      "why": "先查挂了哪些 MCP/Skill，关掉不用的，再检查系统提示是否被注入两遍；数字是作者自测",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "Keep_Liu"
+    },
+    {
+      "id": "2120050574448025797",
+      "date": "2026-11-10",
+      "url": "https://x.com/star_flow_ai/status/2120050574448025797",
+      "title": "7 个让 Agent 少烧 Token、少确认的社区插件",
+      "why": "想省上下文和钱的照单试：live-compact、multitask、plugin-tool-management 等",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "star_flow_ai"
+    },
+    {
+      "id": "2120043214040371616",
+      "date": "2026-11-10",
+      "url": "https://x.com/icandebug/status/2120043214040371616",
+      "title": "极简模式关推理后，Harness 自称 Claude（已有三条独立样本）",
+      "why": "遇到模型自称别家先核模型来源、供应商配置和模式档位，别直接下结论",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "icandebug"
+    },
+    {
+      "id": "2120028579895415179",
+      "date": "2026-11-10",
+      "url": "https://x.com/TryAiLabHQ/status/2120028579895415179",
+      "title": "预印本：同一模型换 harness，终端基准分差可达 38 分",
+      "why": "看 Agent 跑分先问用的哪个 harness；作者自承每任务只跑一次，结论打折看",
+      "tags": [
+        "eval"
+      ],
+      "source_handle": "TryAiLabHQ"
+    },
+    {
+      "id": "2120026164391485551",
+      "date": "2026-11-10",
+      "url": "https://x.com/fr0gger_/status/2120026164391485551",
+      "title": "「富江破甲」越狱插件冒用 deepseek-ai 名，用 replace 覆盖系统提示",
+      "why": "装插件前核对发布者和仓库，别信长得像官方的命名空间；警惕会改系统提示的插件",
+      "tags": [
+        "pain",
+        "infra"
+      ],
+      "source_handle": "fr0gger_"
+    },
+    {
+      "id": "2120024111749410973",
+      "date": "2026-11-10",
+      "url": "https://x.com/CyberKZ06/status/2120024111749410973",
+      "title": "转述官方 Super-agent 设计探索：多任务的上限是人的注意力",
+      "why": "了解官方怎么想多会话管理；配套仓库写明是研究原型，不是正式功能",
+      "tags": [
+        "official",
+        "narrative"
+      ],
+      "source_handle": "CyberKZ06"
+    },
+    {
+      "id": "2120020148858028475",
+      "date": "2026-11-10",
+      "url": "https://x.com/quirekit/status/2120020148858028475",
+      "title": "dsh-quirekit-md-editor：替换内置 Markdown 预览，原地改文档留评论交回 Agent",
+      "why": "「插件替换一件内置功能」的现成样例，常让 Agent 写文档的人可以直接换上",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "quirekit"
+    },
+    {
+      "id": "2119977910371270869",
+      "date": "2026-11-10",
+      "url": "https://x.com/evilcos/status/2119977910371270869",
+      "title": "余弦把 SlowMist 安全 Skill 喂给创造模式，几轮对话生成安全插件",
+      "why": "「现成 Skill → 创造模式 → 专属插件」路径可照做，生成后记得用恶意输入验收",
+      "tags": [
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "evilcos"
+    },
+    {
+      "id": "2119953292495306802",
+      "date": "2026-11-10",
+      "url": "https://x.com/Haosen9527/status/2119953292495306802",
+      "title": "按手头的活选 10 个插件，标好仓库、版本要求和外部依赖",
+      "why": "照这个格式选插件，装之前先看版本门槛和要不要外部服务",
+      "tags": [
+        "practice"
+      ],
+      "source_handle": "Haosen9527"
+    },
+    {
+      "id": "2118640281860124886",
+      "date": "2026-11-06",
+      "url": "https://x.com/NFTCPS/status/2118640281860124886",
+      "title": "鸟哥二次放大官方点名四款社区插件",
+      "why": "公众号认证 → 大号二次分发是清晰获客链路；发插件可对标「被官方点名」这一档。",
+      "tags": [
+        "narrative",
+        "creator"
+      ],
+      "source_handle": "NFTCPS"
+    },
+    {
+      "id": "2118638564447760404",
+      "date": "2026-11-06",
+      "url": "https://x.com/libukai/status/2118638564447760404",
+      "title": "创造模式自迁 Codex 专用插件：迁移路径清晰，直连 API 仍贵",
+      "why": "想把别家 harness 能力搬进 DSH，可直接抄「创造模式迁插件」路径，并提前算 Token 成本。",
+      "tags": [
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "libukai"
+    },
+    {
+      "id": "2118632467481657615",
+      "date": "2026-11-06",
+      "url": "https://x.com/DavidWa7426/status/2118632467481657615",
+      "title": "野生「免费模型」插件安全拆解：可读凭据、可远程推送",
+      "why": "装野生插件前先看权限面；也解释了为什么官方市场/审核会被推上台面。",
+      "tags": [
+        "pain",
+        "infra"
+      ],
+      "source_handle": "DavidWa7426"
+    },
+    {
+      "id": "2118623940658823558",
+      "date": "2026-11-06",
+      "url": "https://x.com/ShiroLinHime/status/2118623940658823558",
+      "title": "Animal Island 主题称已进官方市场",
+      "why": "非生产力主题也能收录，说明官方市场品类不只工具；做皮肤/氛围类可跟这条分发路径。",
+      "tags": [
+        "creator",
+        "narrative"
+      ],
+      "source_handle": "ShiroLinHime"
+    },
+    {
+      "id": "2118623572692488417",
+      "date": "2026-11-06",
+      "url": "https://x.com/double_asa/status/2118623572692488417",
+      "title": "DSH to Figma 0.3.5：Motion 关键帧 + 断线按文件身份恢复",
+      "why": "设计工作流插件在加深，可直接装来试原生动画链路，不必从零写。",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "double_asa"
+    },
+    {
+      "id": "2118615266221605073",
+      "date": "2026-11-06",
+      "url": "https://x.com/imlongmao/status/2118615266221605073",
+      "title": "沉默安装者首次为自己工作流做插件",
+      "why": "装而不用的人被「能力提升」叙事激活成创作者；可当作增长漏斗案例跟观察。",
+      "tags": [
+        "creator-mode",
+        "narrative"
+      ],
+      "source_handle": "imlongmao"
+    },
+    {
+      "id": "2118573759993086131",
+      "date": "2026-11-06",
+      "url": "https://x.com/aliez_ren/status/2118573759993086131",
+      "title": "dsh-sysmon：创造模式一句话自造 + 安装 spec 摩擦",
+      "why": "演示闭环很完整，但仓库安装会踩 spec；跟做时优先记官方 `dsh plugin --profile web add github:…` 路径。",
+      "tags": [
+        "creator-mode",
+        "practice",
+        "pain"
+      ],
+      "source_handle": "aliez_ren"
+    },
+    {
+      "id": "2118553629364031799",
+      "date": "2026-11-06",
+      "url": "https://x.com/0xfakeSpike/status/2118553629364031799",
+      "title": "社区复述 Super-agent：Router+Worker，p95 29.5→15.7 min",
+      "why": "多会话调度叙事有数字可跟；做并行 agent 体验时可作为对照原型。",
+      "tags": [
+        "infra",
+        "practice"
+      ],
+      "source_handle": "0xfakeSpike"
+    },
+    {
+      "id": "2118532159585865796",
+      "date": "2026-11-06",
+      "url": "https://x.com/tianyi/status/2118532159585865796",
+      "title": "崔天毅澄清：Google 登录不是官方入口，应走官网下载",
+      "why": "装包渠道一旦错，后面全是假包/盗版讨论；跟做前先核官方下载页。",
+      "tags": [
+        "official",
+        "pain"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2118373808692437403",
+      "date": "2026-11-06",
+      "url": "https://x.com/joelniklaus/status/2118373808692437403",
+      "title": "Harness Leaderboard：28849 trials 对比 9 个 coding harness",
+      "why": "国际侧把 harness 当可评测层；跟做对比或写小报时可用独立榜单，不绑自家口径。",
+      "tags": [
+        "overseas",
+        "narrative"
+      ],
+      "source_handle": "joelniklaus"
+    },
+    {
+      "id": "2118327352451334166",
+      "date": "2026-11-05",
+      "url": "https://x.com/FiniYang/status/2118327352451334166",
+      "title": "dsh-game-studio 游戏工坊开源：一句话出可玩小游戏",
+      "why": "2D/3D 模板+右栏预览+Agent 自动试玩，想做小游戏可直接装来改",
+      "tags": [
+        "creator-mode",
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "FiniYang"
+    },
+    {
+      "id": "2118304909330182167",
+      "date": "2026-11-05",
+      "url": "https://x.com/simpjayh/status/2118304909330182167",
+      "title": "MCP server+DSH 插件：实时看子任务并回传改动/测试/清单",
+      "why": "大任务想要可验收产出时可参考；小任务不必用",
+      "tags": [
+        "practice",
+        "plugin",
+        "overseas"
+      ],
+      "source_handle": "simpjayh"
+    },
+    {
+      "id": "2118300551830266269",
+      "date": "2026-11-05",
+      "url": "https://x.com/lanceshen66/status/2118300551830266269",
+      "title": "7 条官方 prompt 拆出 Creator Mode 写法公式",
+      "why": "照公式写插件需求（位置+产物+验收），少走一句话造插件的弯路",
+      "tags": [
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "lanceshen66"
+    },
+    {
+      "id": "2118299120758661324",
+      "date": "2026-11-05",
+      "url": "https://x.com/DocsMint/status/2118299120758661324",
+      "title": "DocsMint 出 DSH 开源插件：侧栏+4 个文档工具",
+      "why": "SaaS 主动接 DSH 的样例；文档类工作流可直接用",
+      "tags": [
+        "plugin",
+        "overseas"
+      ],
+      "source_handle": "DocsMint"
+    },
+    {
+      "id": "2118295140586696953",
+      "date": "2026-11-05",
+      "url": "https://x.com/jauneclaude/status/2118295140586696953",
+      "title": "0.2.2-rc.1 破坏性变更：Node 24.9+、插件需迁移 tools 字段",
+      "why": "升级前先备份、查插件兼容；插件作者需改 tools.resolve/mode",
+      "tags": [
+        "pain",
+        "plugin",
+        "overseas"
+      ],
+      "source_handle": "jauneclaude"
+    },
+    {
+      "id": "2118278879291093339",
+      "date": "2026-11-05",
+      "url": "https://x.com/yetone/status/2118278879291093339",
+      "title": "magpie 去掉 DSH 身份文字，回应第三方接入被封号",
+      "why": "用第三方多模型/订阅接入前先评估封号风险",
+      "tags": [
+        "pain",
+        "infra"
+      ],
+      "source_handle": "yetone"
+    },
+    {
+      "id": "2118276008394809367",
+      "date": "2026-11-05",
+      "url": "https://x.com/Keep_Liu/status/2118276008394809367",
+      "title": "别亲手装 DSH 插件，让 agent 装",
+      "why": "装插件报错多时，交给 agent 安装和排错更省事",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "Keep_Liu"
+    },
+    {
+      "id": "2118275044988301816",
+      "date": "2026-11-05",
+      "url": "https://x.com/xiaoling151624/status/2118275044988301816",
+      "title": "DSH 内用量 8 元 vs 官网 60 多元对不上",
+      "why": "以官网账单为准，长任务前设预算",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "xiaoling151624"
+    },
+    {
+      "id": "2118244425935503440",
+      "date": "2026-11-05",
+      "url": "https://x.com/Sam579134371070/status/2118244425935503440",
+      "title": "Creator Mode 一句话自造 4 插件共 ¥4.65",
+      "why": "真实成本参照：自造小插件比想象便宜，花费浮窗可核账",
+      "tags": [
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "Sam579134371070"
+    },
+    {
+      "id": "2118239555010937168",
+      "date": "2026-11-05",
+      "url": "https://x.com/xiaomovps/status/2118239555010937168",
+      "title": "dsh-im：一个插件接 12 种 IM（微信/飞书/钉钉）",
+      "why": "想在聊天软件里用 DSH，市场搜 dsh-im 即装",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "xiaomovps"
+    },
+    {
+      "id": "2118217935919677731",
+      "date": "2026-11-05",
+      "url": "https://x.com/thejingtao/status/2118217935919677731",
+      "title": "DSH Anywhere：扫码手机远程用 DSH（MIT）",
+      "why": "人离开电脑也能盯任务，免自建服务器",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "thejingtao"
+    },
+    {
+      "id": "2118158369295069307",
+      "date": "2026-11-05",
+      "url": "https://x.com/CodeWave001/status/2118158369295069307",
+      "title": "Pi / OpenCode / DSH 三家 harness 架构对比",
+      "why": "选型时一张图看清 DSH 的插件树路线与取舍",
+      "tags": [
+        "narrative",
+        "infra"
+      ],
+      "source_handle": "CodeWave001"
+    },
     {
       "id": "2117967253547221335",
       "date": "2026-11-04",
