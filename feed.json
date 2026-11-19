@@ -1,8 +1,8 @@
 {
   "name": "dsh-ecosystem-feed",
   "timezone": "Asia/Shanghai",
-  "updated_at": "2026-11-10T21:26:45+08:00",
-  "latest_day": "2026-11-10",
+  "updated_at": "2026-11-19T21:25:00+08:00",
+  "latest_day": "2026-11-19",
   "days": [
     "2026-10-25",
     "2026-11-01",
@@ -11,15 +11,22 @@
     "2026-11-04",
     "2026-11-05",
     "2026-11-06",
-    "2026-11-10"
+    "2026-11-10",
+    "2026-11-11",
+    "2026-11-12",
+    "2026-11-13",
+    "2026-11-16",
+    "2026-11-17",
+    "2026-11-18",
+    "2026-11-19"
   ],
   "coverage": {
     "note": "MVP backfill from Creator Mode packs + monitor; not full X history; ongoing via evening routine.",
     "range": [
       "2026-10-25",
-      "2026-11-10"
+      "2026-11-19"
     ],
-    "item_count": 118
+    "item_count": 186
   },
   "mvp": {
     "public_pull": true,
@@ -29,6 +36,821 @@
     ]
   },
   "items": [
+    {
+      "id": "2123378754202575330",
+      "date": "2026-11-19",
+      "url": "https://x.com/Mulight/status/2123378754202575330",
+      "title": "插件市场默认是空的：在「发现」页自己添加第三方索引",
+      "why": "很多人装完找不到插件市场，其实在左侧插件页的「发现」标签；官方没内置源，需要自己粘一条索引。帖里给的是第三方 https://dshopen.org/index.json，并提醒装前让 agent 看一眼源码。发现入口和第一周使用场景要分开",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "Mulight"
+    },
+    {
+      "id": "2123336827189047794",
+      "date": "2026-11-19",
+      "url": "https://x.com/LotusDecoder/status/2123336827189047794",
+      "title": "审批从「每次询问」改成「永不询问」后，这条通知会随下一次请求进入模型上下文",
+      "why": "想搞清权限变更会不会被模型看见，先看这条观察。机制还需对源码核实；楼下认为审批变更应走独立信道，以免多一个提示注入面。不要只靠系统提示约束行为",
+      "tags": [
+        "practice",
+        "pain"
+      ],
+      "source_handle": "LotusDecoder"
+    },
+    {
+      "id": "2123333027430621360",
+      "date": "2026-11-19",
+      "url": "https://x.com/ZanneZheng/status/2123333027430621360",
+      "title": "官方还没有手机 App：扫码经 OpenTandem 在手机上续桌面会话",
+      "why": "社区在补移动端空白，但这条路径绑定了第三方登录，和只做远程审批的插件不是同一类方案。认准仓库 opentandem/dsh-phone（npm 0.1.6 已在 11-15 发布，目录里已有这个包），不要和同名仓或审批插件搞混",
+      "tags": [
+        "plugin"
+      ],
+      "source_handle": "ZanneZheng"
+    },
+    {
+      "id": "2123312756476502292",
+      "date": "2026-11-19",
+      "url": "https://x.com/woshipm/status/2123312756476502292",
+      "title": "公众号成稿台：把分散技能收成一条不用换窗的改稿流程",
+      "why": "飞书导入、按段改稿、去 AI 味、封面排版被收进同一条工作流。安装名是 dsh-wechat-studio（npm 0.1.4，仓库 lqshow/dsh-wechat-studio，目录尚未收录），效果还没广泛实测。可复用判断是：skill 解决会不会，流程解决顺不顺",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "woshipm"
+    },
+    {
+      "id": "2123278437410537619",
+      "date": "2026-11-19",
+      "url": "https://x.com/libukai/status/2123278437410537619",
+      "title": "插件越装越多，首轮更慢：按任务裁剪提示词、工具和可见技能",
+      "why": "作者给出的跟做路径是 thissensen/dsh-agent-studio（目录里已有）：不要继续堆 MCP 和 Skill，先按任务裁掉用不上的上下文。效果还需自己测裁剪前后的请求体和延迟，不要只换一个壳",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "libukai"
+    },
+    {
+      "id": "2123232169430798548",
+      "date": "2026-11-19",
+      "url": "https://x.com/Nemo001ai/status/2123232169430798548",
+      "title": "搜索不是全盘免费：服务端工具不再按次收费，仍计 Token；改走 Search API 则可能按次",
+      "why": "想搞清 rc.5 之后还要不要为搜索单独付钱，先看官方价目：从 11-18 12:00 起，模型调用触发的服务端搜索和网页抓取不再按次计费，但仍计入模型 Token，单价不变。若把搜索提供方改成 Search API，或给其他模型用搜索，仍可能按次收费。不要写成「所有搜索都免费」",
+      "tags": [
+        "official",
+        "pain"
+      ],
+      "source_handle": "Nemo001ai"
+    },
+    {
+      "id": "2123231665862705488",
+      "date": "2026-11-19",
+      "url": "https://x.com/antiAIvo/status/2123231665862705488",
+      "title": "源码学习 EP.05：走进 step() 的请求组装、配置冻结和工具调用",
+      "why": "公开讲解从调用前的相位检查、插件拦截，转到一次 step 里实际怎么组请求、冻配置、收流和调工具。适合接着昨天「发给大模型前要做哪些准备」往下写；楼下已经在问学 harness 有没有职业回报，作者说主要是好奇",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "antiAIvo"
+    },
+    {
+      "id": "2123081411741798486",
+      "date": "2026-11-18",
+      "url": "https://x.com/xiaomovps/status/2123081411741798486",
+      "title": "同一套自媒体工作台，已经用 skill 搬到了 Pi",
+      "why": "这条发在 11-18 23:50，昨日晚间摘要之后才收入。场景能跑起来，不等于必须留在 DSH；比较宿主时更该看长任务恢复、升级兼容和远程审批，而不是插件数量",
+      "tags": [
+        "practice"
+      ],
+      "source_handle": "xiaomovps"
+    },
+    {
+      "id": "2123040514400510116",
+      "date": "2026-11-18",
+      "url": "https://x.com/xulijian1994/status/2123040514400510116",
+      "title": "官方预发布 v0.2.2-rc.5：DeepSeek 模型走服务端搜索，不再按次收费",
+      "why": "想搞清今天搜索还要不要单独付钱，先看官方发行说明（X 上三个官方号都没发）：DeepSeek 模型默认改走服务端搜索、不按次计费，其他模型仍默认走 Search API",
+      "tags": [
+        "official"
+      ],
+      "source_handle": "xulijian1994"
+    },
+    {
+      "id": "2123020095668813851",
+      "date": "2026-11-18",
+      "url": "https://x.com/xiaomovps/status/2123020095668813851",
+      "title": "最需要提升的不是插件数量，而是长任务、插件管理和上下文记忆",
+      "why": "用下来最卡的三件事说得很具体：长任务容易卡死且无法从断点续跑、版本一升插件就挂、压缩后关键目标会丢。想决定先补哪类插件，或向官方提需求，可以直接对照这三条",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "xiaomovps"
+    },
+    {
+      "id": "2122938368896184382",
+      "date": "2026-11-18",
+      "url": "https://x.com/amigolu_/status/2122938368896184382",
+      "title": "别再收集插件了：30 个里只留下一周内会用上第二次的 10 个",
+      "why": "可复用的是筛选标准，不是这份名单本身；清单里还掺了官方内置插件和 Skill，不能直接当成社区十佳",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "amigolu_"
+    },
+    {
+      "id": "2122908788764057977",
+      "date": "2026-11-18",
+      "url": "https://x.com/hodu382759/status/2122908788764057977",
+      "title": "free-dsh-search：官方搜索要点钱时，切换到带免费额度的五家搜索",
+      "why": "适合其他模型，或仍把网页搜索提供方设成 DeepSeek Search API 的路径；rc.5 之后，DeepSeek 模型默认走服务端搜索，不必再把它写成官方模型还得自己找免费搜索",
+      "tags": [
+        "plugin",
+        "pain"
+      ],
+      "source_handle": "hodu382759"
+    },
+    {
+      "id": "2122886670240669809",
+      "date": "2026-11-18",
+      "url": "https://x.com/antiAIvo/status/2122886670240669809",
+      "title": "调用大模型前的最后一道闸门：很稳，但个人场景里 90% 的检查走不到",
+      "why": "想搞懂 DSH 为什么显得重和慢，先看这篇可视化；作者认为只给自己用时，可以基于 DSH 砍掉大部分防御逻辑、只留主干。晚间还有把准备工作写成正文的长文",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "antiAIvo"
+    },
+    {
+      "id": "2122884211489321468",
+      "date": "2026-11-18",
+      "url": "https://x.com/JeffreyCalm/status/2122884211489321468",
+      "title": "不支持 MCP 懒加载时，工具说明一次能吃掉约 90K 上下文",
+      "why": "用 1M 窗口不容易察觉，接到更小上下文的订阅就会频繁压缩。有人说按需加载已合进 master，但 rc.4 / rc.5 发行说明都还没有，先按手上安装包的实际体验来",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "JeffreyCalm"
+    },
+    {
+      "id": "2122856452511645703",
+      "date": "2026-11-18",
+      "url": "https://x.com/AM09_21/status/2122856452511645703",
+      "title": "不该每次让 Agent 调工具，而该让它写出调用工具的程序",
+      "why": "这是当天可见度最高的架构判断。作者把 DSH 的 PTC 和 Claude Code 的 Code Mode 放在同一条路上：确定性步骤交给程序执行，模型负责何时生成这段程序",
+      "tags": [
+        "practice",
+        "overseas"
+      ],
+      "source_handle": "AM09_21"
+    },
+    {
+      "id": "2122762040166981974",
+      "date": "2026-11-18",
+      "url": "https://x.com/eugeniobi/status/2122762040166981974",
+      "title": "不一定要买 VPS：旧手机改成服务器，再装 DSH 和 Telegram 插件",
+      "why": "来自阿根廷的小样本实践，路径具体，适合想低成本远程跑 DSH 的人；不要写成已经广泛验证的方案",
+      "tags": [
+        "overseas",
+        "practice"
+      ],
+      "source_handle": "eugeniobi"
+    },
+    {
+      "id": "2122635243463094779",
+      "date": "2026-11-17",
+      "url": "https://x.com/sleep9ull/status/2122635243463094779",
+      "title": "dsh-upkeep：盯住自己做的插件，会不会被上游新版本弄挂",
+      "why": "版本还在动荡期，昨天能用的插件今天可能装不上；插件作者可以先用它做兼容检查",
+      "tags": [
+        "plugin",
+        "pain"
+      ],
+      "source_handle": "sleep9ull"
+    },
+    {
+      "id": "2122633166150373597",
+      "date": "2026-11-17",
+      "url": "https://x.com/antiAIvo/status/2122633166150373597",
+      "title": "我是怎么读 DeepSeek Harness 源码的：先自己把函数通读一遍，卡住的先放着，过完再问 AI",
+      "why": "官方今天没发帖，社区里最清楚的一条学习路径；同一作者白天还写了学习大纲，以及取消必须发生在循环产生副作用之前",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "antiAIvo"
+    },
+    {
+      "id": "2122613949535588539",
+      "date": "2026-11-17",
+      "url": "https://x.com/atasrb/status/2122613949535588539",
+      "title": "同一模型 V4.1-Flash、两台 Spark，六个 harness 各跑 11 次：DSH 中位 1:50，但 11 次里有 7 次首轮测试失败",
+      "why": "换到官方 Flash、双机之后 DSH 不再是最慢的那个；更值得看的是首轮质量和修复循环，而不是只盯中位耗时",
+      "tags": [
+        "eval",
+        "pain"
+      ],
+      "source_handle": "atasrb"
+    },
+    {
+      "id": "2122576125490811194",
+      "date": "2026-11-17",
+      "url": "https://x.com/YFYkuner/status/2122576125490811194",
+      "title": "dsh-phone-approval：把审批连到 iPhone，避免凌晨 agent 空等四小时",
+      "why": "人不在电脑前，权限确认和发布确认就会卡住；这个插件用推送 + 本机审批页，不打算绕过「只允许一次」",
+      "tags": [
+        "plugin",
+        "practice",
+        "pain"
+      ],
+      "source_handle": "YFYkuner"
+    },
+    {
+      "id": "2122571927243927788",
+      "date": "2026-11-17",
+      "url": "https://x.com/ai_chuhai/status/2122571927243927788",
+      "title": "几万个插件，不跟没有插件一样吗",
+      "why": "市场越大，默认搜索越不好用；先定工作流再装，或用「一个入口打完一条任务链」，比继续囤插件更接近真实用法",
+      "tags": [
+        "pain",
+        "narrative"
+      ],
+      "source_handle": "ai_chuhai"
+    },
+    {
+      "id": "2122540589770264693",
+      "date": "2026-11-17",
+      "url": "https://x.com/JamesoldmanX/status/2122540589770264693",
+      "title": "开源 DSH Community：补 Linux 桌面和 TUI，并做多 Agent 加密远程工作台",
+      "why": "官方 Desktop 目前只覆盖 Windows / macOS，离开电脑也很难审批；Linux 用户或需要手机看会话的人可以看这个社区版",
+      "tags": [
+        "plugin",
+        "infra"
+      ],
+      "source_handle": "JamesoldmanX"
+    },
+    {
+      "id": "2122519613351289183",
+      "date": "2026-11-17",
+      "url": "https://x.com/sredevopsorg/status/2122519613351289183",
+      "title": "西语教程：在 Docker 与 Kubernetes 上安全、可扩展地使用 DSH（第二部分）",
+      "why": "来自智利的原创实践，把 DSH 当成可部署的基础设施，而不只是桌面客户端；适合要在容器里跑的人",
+      "tags": [
+        "overseas",
+        "practice",
+        "infra"
+      ],
+      "source_handle": "sredevopsorg"
+    },
+    {
+      "id": "2122505508296757301",
+      "date": "2026-11-17",
+      "url": "https://x.com/MingoZhouh/status/2122505508296757301",
+      "title": "dsh-sacred：在官方自动压缩之前，自己决定留下什么、剪掉什么",
+      "why": "长会话一压缩，重要规矩可能被从最早的消息删掉，窗口反而堆着过时日志；这插件不额外调模型，剪掉的原文还能从日志召回",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "MingoZhouh"
+    },
+    {
+      "id": "2122303780909953201",
+      "date": "2026-11-17",
+      "url": "https://x.com/fatwang2ai/status/2122303780909953201",
+      "title": "把 Claude Projects 搬到 DSH：主对话说需求，自动拆成并行任务，独立 worktree 跑并留下项目记忆",
+      "why": "想要「一个项目多任务并行」可直接装；MIT，自称用 V4.1 Flash 写完。目录里暂时还搜不到 fatwang2/dsh-projects",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "fatwang2ai"
+    },
+    {
+      "id": "2122263651558252878",
+      "date": "2026-11-16",
+      "url": "https://x.com/atasrb/status/2122263651558252878",
+      "title": "同一机器同一本地模型横评六个 harness：DSH 中位 11:07，opencode 2:44，DSH 单次 2:10–30:01",
+      "why": "本地模型跑 DSH 偏慢、波动大；在意速度先自己测几轮，附了可复现的 recipe",
+      "tags": [
+        "eval",
+        "overseas",
+        "pain"
+      ],
+      "source_handle": "atasrb"
+    },
+    {
+      "id": "2122232660470976683",
+      "date": "2026-11-16",
+      "url": "https://x.com/MeiK2333/status/2122232660470976683",
+      "title": "dsh-model-allowance 1.1.0：一个面板看 DeepSeek、MiniMax、智谱、Kimi 等六家余额",
+      "why": "多家模型混用时不用挨个登录后台查钱",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "MeiK2333"
+    },
+    {
+      "id": "2122209184884351444",
+      "date": "2026-11-16",
+      "url": "https://x.com/VeknQAQ/status/2122209184884351444",
+      "title": "仿 Codex 任务分组的 DSH 插件（开源）",
+      "why": "会话一多就乱的人可以直接装；楼里一片「刚需」，说明这是官方还没补上的缺口",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "VeknQAQ"
+    },
+    {
+      "id": "2122134554970661031",
+      "date": "2026-11-16",
+      "url": "https://x.com/omnigeeker/status/2122134554970661031",
+      "title": "fork chat-demo 后别把 API key 写进前端",
+      "why": "前端源码谁都能看，key 一泄露账单就会被刷爆；要给别人用就加一个小后端代理",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "omnigeeker"
+    },
+    {
+      "id": "2121621466571743679",
+      "date": "2026-11-16",
+      "url": "https://x.com/Chishan66/status/2121621466571743679",
+      "title": "半天用 DSH 做出只给自己用的个人助理页",
+      "why": "Creator Mode 的好样板：读日记和任务、改任务前先问你，照着就能做一个自己的",
+      "tags": [
+        "creator-mode",
+        "practice"
+      ],
+      "source_handle": "Chishan66"
+    },
+    {
+      "id": "2121573266393530767",
+      "date": "2026-11-16",
+      "url": "https://x.com/zg0820/status/2121573266393530767",
+      "title": "把 0.2.1→0.2.2 的 11 份迁移文档整理成「10 个变化」",
+      "why": "插件作者升级前对着这份清单查一遍，少踩破坏性变更",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "zg0820"
+    },
+    {
+      "id": "2121531584394461654",
+      "date": "2026-11-16",
+      "url": "https://x.com/nuskey8/status/2121531584394461654",
+      "title": "lazydsh：基于 Pi 的 DSH 终端界面，独立 CLI、可共享会话",
+      "why": "喜欢终端的人可以试；它在宿主外运行，不怕 DSH 升级把插件弄挂",
+      "tags": [
+        "plugin",
+        "overseas"
+      ],
+      "source_handle": "nuskey8"
+    },
+    {
+      "id": "2121358059767210474",
+      "date": "2026-11-16",
+      "url": "https://x.com/omnigeeker/status/2121358059767210474",
+      "title": "API 搜索的真实成本：40 token 的问题实际吃掉 9,078 输入 token",
+      "why": "搜索结果会进上下文，max_tokens 只管单步；用搜索做插件或日报前，先按会话算一次成本",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "omnigeeker"
+    },
+    {
+      "id": "2121264664571269160",
+      "date": "2026-11-16",
+      "url": "https://x.com/tianyi/status/2121264664571269160",
+      "title": "崔天毅：下一个超级 App 可以只属于你一个人",
+      "why": "理解 DSH/API 的方向：官方鼓励每个人拼自己的工具，而不是等一个大而全的 App",
+      "tags": [
+        "official",
+        "narrative"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2121247896918253875",
+      "date": "2026-11-16",
+      "url": "https://x.com/deepseek_ai/status/2121247896918253875",
+      "title": "DeepSeek App 能力整体开放给 API：搜索、文件、链接、安全、语音，外加 OCR/ASR/TTS；开源 chat-demo 可导入历史对话",
+      "why": "想做自己的 DeepSeek 前端或插件，现在能直接调 App 同款能力；公开给别人用的应用要开安全检查",
+      "tags": [
+        "official",
+        "practice"
+      ],
+      "source_handle": "deepseek_ai"
+    },
+    {
+      "id": "2121232361685713089",
+      "date": "2026-11-13",
+      "url": "https://x.com/xiaomovps/status/2121232361685713089",
+      "title": "升级后插件容易失效：用 3 个社区项目串一套升级流程（先备份再升级）",
+      "why": "rc 版更新频繁、插件常跟着挂；升级前先备份配置、确认插件兼容范围、留好回退，再动手",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "xiaomovps"
+    },
+    {
+      "id": "2121229906621440367",
+      "date": "2026-11-13",
+      "url": "https://x.com/yifanxu_ephai/status/2121229906621440367",
+      "title": "LayerFS 2.0「兜兜转转回到 dsh」：50 个 worktree、2000+ commits、最多 8 个 subagent 并行",
+      "why": "被其他 UI 项目的 license 劝退后回到 MIT 的 DSH 魔改；想做重度并行实验的，可以参考他的规模和快照去重数据（作者自述）",
+      "tags": [
+        "creator",
+        "practice"
+      ],
+      "source_handle": "yifanxu_ephai"
+    },
+    {
+      "id": "2121215446720696733",
+      "date": "2026-11-13",
+      "url": "https://x.com/antiAIvo/status/2121215446720696733",
+      "title": "学 DSH 源码：先过 Cordis 插件框架，再盯一次「敲回车→看到回复」的完整闭环",
+      "why": "想通过读源码弄懂 Agent/Harness 的：先懂依赖注入和插件生命周期，再顺着一次请求从头跟到尾，比按模块分开读更容易串起来",
+      "tags": [
+        "practice",
+        "infra"
+      ],
+      "source_handle": "antiAIvo"
+    },
+    {
+      "id": "2121207658728296829",
+      "date": "2026-11-13",
+      "url": "https://x.com/ErickSky/status/2121207658728296829",
+      "title": "Claude 全球宕机当晚，西语科技博主 @ErickSky 喊人来 DSH：「每月 $10 也能做同样的事」",
+      "why": "西语圈的拉新时刻往往是「主力工具宕机找替代」；做西语内容的可以提前备好从 Claude 迁到 DSH 的上手指南",
+      "tags": [
+        "overseas",
+        "narrative"
+      ],
+      "source_handle": "ErickSky"
+    },
+    {
+      "id": "2121197691099329001",
+      "date": "2026-11-13",
+      "url": "https://x.com/NFT_Chen/status/2121197691099329001",
+      "title": "v0.2.2-rc.3：官方实验性插件可把 DeepSeek App / 网页版历史对话导入 DSH 接着聊",
+      "why": "从 DeepSeek App 迁过来的人不用从零开始；这是官方走 App/网页会话的导入路径，和社区吃 /export ZIP 的导入插件不是一回事，别混装。预发布版（GitHub Release 11-13 15:56），求稳可等正式版",
+      "tags": [
+        "official",
+        "practice"
+      ],
+      "source_handle": "NFT_Chen"
+    },
+    {
+      "id": "2121173430729093558",
+      "date": "2026-11-13",
+      "url": "https://x.com/Daviswh/status/2121173430729093558",
+      "title": "dsh-super-kanban 0.4→0.8：跨工作区归集任务，标「待审批 / 待验收」",
+      "why": "同时开多个会话、多个工作区的人，用它把散落的任务收进一块看板，不用逐个会话翻",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "Daviswh"
+    },
+    {
+      "id": "2121160887725695024",
+      "date": "2026-11-13",
+      "url": "https://x.com/CNopenmodels/status/2121160887725695024",
+      "title": "Aurabot：给模型一个 QQ 号 + 人格/记忆，模块可换，默认 dry-run",
+      "why": "会替你对外发消息的插件，默认先 dry-run 是个好习惯；插件作者可以照抄这个安全默认值",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "CNopenmodels"
+    },
+    {
+      "id": "2121062974161092792",
+      "date": "2026-11-13",
+      "url": "https://x.com/thsottiaux/status/2121062974161092792",
+      "title": "OpenAI Codex 负责人问「Codex 怎么改进」，楼里多条回复点名学 DSH「一切皆插件」",
+      "why": "竞品用户已经把 DSH 的插件化当参照系；想跟别人解释 DSH 和 Codex 差在哪，这楼里是现成的外部说法",
+      "tags": [
+        "narrative",
+        "overseas"
+      ],
+      "source_handle": "thsottiaux"
+    },
+    {
+      "id": "2120926702335340648",
+      "date": "2026-11-13",
+      "url": "https://x.com/VentureBeat/status/2120926702335340648",
+      "title": "VentureBeat：同用 Kimi K3、同样 63.3% 通过率，每个通过任务 Claude Code 花 $18.34，DSH 花 $3.28",
+      "why": "选 harness 也是在选账单：换 harness 对成本的影响可能比换模型还大。引用数字时注明是 VB Intelligence 的测法",
+      "tags": [
+        "eval",
+        "overseas"
+      ],
+      "source_handle": "VentureBeat"
+    },
+    {
+      "id": "2120908395410759965",
+      "date": "2026-11-12",
+      "url": "https://x.com/tangalex1737669/status/2120908395410759965",
+      "title": "把 DSH 当 headless 编码执行器的四个坑：拒绝仍 exit 0、事件流无模型名、无 shell 白名单、沙箱非内核级",
+      "why": "要在 CI/脚本里跑 DSH 的，别只看退出码；命令白名单和文件隔离要自己补",
+      "tags": [
+        "infra",
+        "pain"
+      ],
+      "source_handle": "tangalex1737669"
+    },
+    {
+      "id": "2120858499672621344",
+      "date": "2026-11-12",
+      "url": "https://x.com/halozhangyu/status/2120858499672621344",
+      "title": "装社区插件前先看仓库写的兼容范围（例：>=0.2.2-rc.1 <0.3.0）",
+      "why": "社区插件不是官方出品，版本对不上最容易「一升级就炸」；插件页有写兼容范围的优先装",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "halozhangyu"
+    },
+    {
+      "id": "2120809726988722630",
+      "date": "2026-11-12",
+      "url": "https://x.com/SkyLee141/status/2120809726988722630",
+      "title": "垂类 Agent 从 Pi 迁到 DSH：交互做成插件，停用即通用、启用即垂类",
+      "why": "做行业 Agent 不用另起一套壳，把垂类 UI 和流程做成可开关的插件就行，通用能力还能留着",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "SkyLee141"
+    },
+    {
+      "id": "2120804565129875789",
+      "date": "2026-11-12",
+      "url": "https://x.com/libukai/status/2120804565129875789",
+      "title": "rc.1 升 rc.2 后原生对话服务起不来，最后靠 Codex 改一个配置参数救回",
+      "why": "升级预发布版前先备份配置，最好留一个独立的「应急 dsh」实例；起不来时先排查配置冲突，别急着重装",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "libukai"
+    },
+    {
+      "id": "2120769549679386878",
+      "date": "2026-11-12",
+      "url": "https://x.com/0xlangeai/status/2120769549679386878",
+      "title": "DSH 保姆级教程：从读第一份文件，到做一个读评论找选题的小插件",
+      "why": "新手照着走一遍就能从会用到会写插件；「教程 + 一个能复用的小插件」也是当天互动最高的内容形式",
+      "tags": [
+        "practice",
+        "creator"
+      ],
+      "source_handle": "0xlangeai"
+    },
+    {
+      "id": "2120755847601267060",
+      "date": "2026-11-12",
+      "url": "https://x.com/koalazhao340/status/2120755847601267060",
+      "title": "FrontierHarness 把插件生态拿掉测「毛坯房」，DSH 垫底是否公平",
+      "why": "看任何 harness 榜单先问四件事：版本、模式、带不带插件、是否经过作弊审计；不然分数和你的实际体验对不上",
+      "tags": [
+        "eval"
+      ],
+      "source_handle": "koalazhao340"
+    },
+    {
+      "id": "2120737123045359699",
+      "date": "2026-11-12",
+      "url": "https://x.com/QuantumTransf/status/2120737123045359699",
+      "title": "崔追问「为啥 dsh 正经做东西不太行」，得到的答复：上游一变插件就得跟改",
+      "why": "写插件前先评估跟版本的维护成本：只依赖公开 API、少碰内部抽象；楼下 rubickecho 的做法是只装 2–3 个社区插件，其余自己写",
+      "tags": [
+        "pain",
+        "plugin"
+      ],
+      "source_handle": "QuantumTransf"
+    },
+    {
+      "id": "2120710794455425227",
+      "date": "2026-11-12",
+      "url": "https://x.com/hongseyanqiu/status/2120710794455425227",
+      "title": "给医院做 MDT 会诊：数据不出院、院内 GLM + DSH 插件接 HIS + 会诊报告沉淀成 skill",
+      "why": "做 To B 交付的可以照这个结构：模型用客户内网的、插件对接内部系统、专家经验沉淀成 skill；不一定要用 DeepSeek 模型",
+      "tags": [
+        "practice",
+        "creator-mode"
+      ],
+      "source_handle": "hongseyanqiu"
+    },
+    {
+      "id": "2120710315499200903",
+      "date": "2026-11-12",
+      "url": "https://x.com/XaoNiu8618/status/2120710315499200903",
+      "title": "升到 0.2.2-rc.1 后「上传 Session Log」默认开启，关遥测也关不掉它",
+      "why": "在意隐私的，升级后去设置里单独关掉「上传 Session Log」；作者只确认了开关默认开，没确认确实上传了",
+      "tags": [
+        "pain",
+        "infra"
+      ],
+      "source_handle": "XaoNiu8618"
+    },
+    {
+      "id": "2120708843365716415",
+      "date": "2026-11-12",
+      "url": "https://x.com/DataelemLab/status/2120708843365716415",
+      "title": "Dataelem 发布基于 DSH 的 DSH Desktop：社区版开源，企业版补组织权限、额度与审计",
+      "why": "团队想用 DSH 但缺账号、权限、用量管理的，可以先看这个开源社区版；也说明「团队管理层」目前要靠第三方补",
+      "tags": [
+        "plugin",
+        "infra"
+      ],
+      "source_handle": "DataelemLab"
+    },
+    {
+      "id": "2120707694252154901",
+      "date": "2026-11-12",
+      "url": "https://x.com/Michael65229/status/2120707694252154901",
+      "title": "桌面端系统提示里的「@ 前缀是路径」一段会让 gemini-4-argon 几乎不思考",
+      "why": "用非 DeepSeek 模型时如果发现答得又快又浅，先查系统提示；作者改写后产出从 2.5KB 恢复到 73KB（重放 20/20，作者自述）",
+      "tags": [
+        "pain",
+        "practice"
+      ],
+      "source_handle": "Michael65229"
+    },
+    {
+      "id": "2120565920754274632",
+      "date": "2026-11-12",
+      "url": "https://x.com/tianyi/status/2120565920754274632",
+      "title": "崔天毅回应 LayerFS Connect 改用 MIT 的 dsh 魔改：「欢迎魔改 dsh」",
+      "why": "想基于 DSH 做白标或二开的可以放心 fork（MIT），官方公开表态欢迎；楼下同时有人问 super agent、子代理触发，可顺手看用户最在意什么",
+      "tags": [
+        "official",
+        "narrative"
+      ],
+      "source_handle": "tianyi"
+    },
+    {
+      "id": "2120479242618388549",
+      "date": "2026-11-11",
+      "url": "https://x.com/aipruner/status/2120479242618388549",
+      "title": "dsh-our-free-model 的「免费免 Key」其实是共享公开 Key 走第三方免费网关",
+      "why": "别把它当长期方案：会限流、会突然 402 欠费，还有合规风险；想低门槛试用就去拿官方免费额度",
+      "tags": [
+        "pain"
+      ],
+      "source_handle": "aipruner"
+    },
+    {
+      "id": "2120473171912761665",
+      "date": "2026-11-11",
+      "url": "https://x.com/gkxspace/status/2120473171912761665",
+      "title": "做企业交付的在用 DSH 定制界面和插件，再赚底层 token 差价",
+      "why": "MIT 许可允许白标打包；想做 B 端交付可以参考这条路，但 token 和号池要自己先垫钱",
+      "tags": [
+        "practice",
+        "narrative"
+      ],
+      "source_handle": "gkxspace"
+    },
+    {
+      "id": "2120464756138291640",
+      "date": "2026-11-11",
+      "url": "https://x.com/shantanugoel/status/2120464756138291640",
+      "title": "DSH 默认挂了 tool-result-pruner：上下文吃紧时先删工具结果，缓存命中率因此变差",
+      "why": "发现缓存命中比 Pi 差时，先查默认挂载的插件列表；删中间的工具结果会让后面整段前缀缓存失效。Arnav Gupta 在楼下补了反面：长任务里它能拖后压缩，单任务总成本未必更高",
+      "tags": [
+        "pain",
+        "practice",
+        "overseas"
+      ],
+      "source_handle": "shantanugoel"
+    },
+    {
+      "id": "2120448732236050477",
+      "date": "2026-11-11",
+      "url": "https://x.com/AYi_AInotes/status/2120448732236050477",
+      "title": "新手上手顺序：先跑免依赖的排版/原型插件，再用创造模式搭极简待办流",
+      "why": "刚装好别先碰要装 FFmpeg 之类的高门槛插件；另外记得装完要点「启用」，很多人卡在这一步",
+      "tags": [
+        "practice",
+        "creator-mode"
+      ],
+      "source_handle": "AYi_AInotes"
+    },
+    {
+      "id": "2120432810267693096",
+      "date": "2026-11-11",
+      "url": "https://x.com/aartiles24/status/2120432810267693096",
+      "title": "长跑测试：DSH 自动压缩 7 小时触发 18 次、共耗约 51 分钟",
+      "why": "跑长任务的留意压缩成本，必要时自己控压缩时机；数字为 Tenaz 作者自测",
+      "tags": [
+        "practice",
+        "eval"
+      ],
+      "source_handle": "aartiles24"
+    },
+    {
+      "id": "2120421224732103120",
+      "date": "2026-11-11",
+      "url": "https://x.com/cgartlab/status/2120421224732103120",
+      "title": "用创造模式给自己做的键盘切会话插件 dsh-tac，上架 24 小时 800+ 下载",
+      "why": "「先给自己造、再上架」可以照做：解决自己的小痛点，市场会给冷启动分发。下载数为作者自述",
+      "tags": [
+        "creator-mode",
+        "plugin"
+      ],
+      "source_handle": "cgartlab"
+    },
+    {
+      "id": "2120409705751236920",
+      "date": "2026-11-11",
+      "url": "https://x.com/AgentSparko/status/2120409705751236920",
+      "title": "有人私信推「让手机连你的 DSH」的开源插件，实为中间人加远程执行",
+      "why": "陌生人私信推荐的插件一律不装，远程连接只用自己能核实来源的方案（作者自述，未附技术细节）",
+      "tags": [
+        "pain",
+        "infra"
+      ],
+      "source_handle": "AgentSparko"
+    },
+    {
+      "id": "2120409528919630321",
+      "date": "2026-11-11",
+      "url": "https://x.com/0xlangeai/status/2120409528919630321",
+      "title": "先装这 5 个：dsh-market、ModLens、better-sidebar、dsh-context、AgentTeams",
+      "why": "新手照单装：dsh-market 找插件，dsh-context 看每个会话花了多少 token，从这两个开始",
+      "tags": [
+        "practice",
+        "plugin"
+      ],
+      "source_handle": "0xlangeai"
+    },
+    {
+      "id": "2120332399598882820",
+      "date": "2026-11-11",
+      "url": "https://x.com/trevorlasn/status/2120332399598882820",
+      "title": "长文：关了遥测，DSH 仍默认上传会话日志、插件清单和设备信息",
+      "why": "在意隐私的先去设置里关「上传会话日志」，CLI 用户逐项检查插件开关；DSH_TELEMETRY_MODE=DISABLED 据作者说只关反馈一项。代码引用是作者自述，本库未独立核验",
+      "tags": [
+        "pain",
+        "infra",
+        "overseas"
+      ],
+      "source_handle": "trevorlasn"
+    },
+    {
+      "id": "2120274628039864349",
+      "date": "2026-11-11",
+      "url": "https://x.com/dotey/status/2120274628039864349",
+      "title": "宝玉：没有 Claude 账号想试 Claude 白板，可以用 DSH 插件",
+      "why": "竞品出新功能时先在 DSH 市场搜一下，社区往往已经做了免账号的替代版",
+      "tags": [
+        "plugin",
+        "creator"
+      ],
+      "source_handle": "dotey"
+    },
+    {
+      "id": "2120192585235046712",
+      "date": "2026-11-11",
+      "url": "https://x.com/guanlan/status/2120192585235046712",
+      "title": "FrontierHarness v1.1：DSH 极简配置跑分反超装了通用插件的配置",
+      "why": "默认少装插件、按需加载更稳；但楼下指出榜单测的是 v0.1.0-rc.8，引用分数时记得带版本前提",
+      "tags": [
+        "eval",
+        "practice"
+      ],
+      "source_handle": "guanlan"
+    },
+    {
+      "id": "2120148962275692829",
+      "date": "2026-11-10",
+      "url": "https://x.com/long_jingai/status/2120148962275692829",
+      "title": "官方 codex / cc 子智能体插件：把任务外包给本地 Codex、Claude Code，不占当前会话上下文",
+      "why": "想多 Agent 分工的可以直接用；注意每次委派都是新开一轮、不能续接，交代任务时写清目标、可改文件和验收标准",
+      "tags": [
+        "plugin",
+        "practice"
+      ],
+      "source_handle": "long_jingai"
+    },
     {
       "id": "2120085945298846069",
       "date": "2026-11-10",
